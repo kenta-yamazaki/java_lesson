@@ -6,7 +6,7 @@ package sho1;
  * 意外に"Java"って簡単だ
  * 意外に"Java"って簡単だ
  */
-public class Kantan{
+public class Kantan {
     public static void main(String[] args)
     {
         System.out.println("意外に\"Java\"って簡単だ。");

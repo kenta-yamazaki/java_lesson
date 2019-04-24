@@ -17,16 +17,14 @@ public class Jikoku {
         try {
             System.out.println("現在の時刻を入力してください。(「時」のみでけっこうです。)");
             String line = reader.readLine();
-            int time_now = Integer.parseInt(line);
-            if (time_now < 0 || 23 < time_now) {
-                System.out.println("時刻は0～23の間ですよ。");
-            } else if (0 <= time_now && time_now < 12) {
+            int nowTime = Integer.parseInt(line);
+            if (0 <= nowTime && nowTime <= 11) {
                 System.out.println("おはようございます");
-            } else if (12 == time_now) {
+            } else if (nowTime == 12) {
                 System.out.println("お昼です");
-            } else if (13 <= time_now && time_now < 19) {
+            } else if (13 <= nowTime && nowTime <= 18) {
                 System.out.println("こんにちは");
-            } else if (19 <= time_now && time_now < 24) {
+            } else if (19 <= nowTime && nowTime <= 23) {
                 System.out.println("こんばんは");
             } else {
                 System.out.println("時刻の範囲を超えています");

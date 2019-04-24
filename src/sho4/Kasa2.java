@@ -1,6 +1,8 @@
 package sho4;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * list4-1では1200％の降水確率が許されてしまいました。<br>
@@ -12,11 +14,11 @@ public class Kasa2 {
         try {
             System.out.println("降水確率を入力してください。");
             String line = reader.readLine();
-            int rainy_per = Integer.parseInt(line);
-            System.out.println("降水確率は" + rainy_per + "％です。");
-            if (rainy_per > 100) {
+            int rainyPercent = Integer.parseInt(line);
+            System.out.println("降水確率は" + rainyPercent + "％です。");
+            if (rainyPercent > 100) {
                 System.out.println("降水確率は0～100の間ですよ。");
-            } else if (rainy_per >= 50) {
+            } else if (rainyPercent >= 50) {
                 System.out.println("傘を忘れずにね。");
             } else {
                 System.out.println("傘はいりません。");

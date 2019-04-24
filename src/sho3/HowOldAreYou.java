@@ -1,11 +1,10 @@
 package sho3;
 
+import java.io.*;
+
 /**
  * 名前と年齢をたずねるプログラム
  */
-
-import java.io.*;
-
 public class HowOldAreYou {
     public static void main(String[] args) {
         System.out.println("あなたの名前を入力してください。");

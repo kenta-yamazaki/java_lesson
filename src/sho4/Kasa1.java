@@ -1,6 +1,8 @@
 package sho4;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * 降水確率を入力すると、傘を持っていった方がいいか教えてくれるプログラム。

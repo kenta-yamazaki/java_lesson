@@ -1,21 +1,17 @@
 package sho3;
 
-/**
- * 読解練習「九九練習プログラム」
- *
- * Kukuは、九九の問題をランダムに10個表示してその正解数と正解率を表示するプログラムである。
- *
- * @author結城浩
- * @copyright by Hiroshi Yuki.
- */
-
 import java.io.*;
 
+/**
+ * 読解練習「九九練習プログラム」<br>
+ *
+ * Kukuは、九九の問題をランダムに10個表示してその正解数と正解率を表示するプログラムである。
+ */
 public class Kuku {
     /** 表示する問題の個数 */
     public static final int MAX_QUESTION = 10;
     /**
-     * 九九の問題をMAX_QUESTION回繰り返して出題する。
+     * 九九の問題をMAX_QUESTION回繰り返して出題する。<br>
      * 最後に正答率を表示する
      */
     public static void main(String[] args) {

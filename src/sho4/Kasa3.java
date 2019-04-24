@@ -1,6 +1,8 @@
 package sho4;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * 傘プログラムの完成。<br>
@@ -14,11 +16,11 @@ public class Kasa3 {
         try {
             System.out.println("降水確率を入力してください。");
             String line = reader.readLine();
-            int rainy_per = Integer.parseInt(line);
-            System.out.println("降水確率は" + rainy_per + "％です。");
-            if (rainy_per < 0 || 100 < rainy_per) {
+            int rainyPercent = Integer.parseInt(line);
+            System.out.println("降水確率は" + rainyPercent + "％です。");
+            if (rainyPercent < 0 || 100 < rainyPercent) {
                 System.out.println("降水確率は0～100の間ですよ。");
-            } else if (rainy_per >= 50) {
+            } else if (rainyPercent >= 50) {
                 System.out.println("傘を忘れずにね。");
             } else {
                 System.out.println("傘はいりません。");

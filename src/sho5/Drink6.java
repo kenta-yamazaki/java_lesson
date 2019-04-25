@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- *<pre>{@code
+ * <pre>{@code
  * switch(c){
  *     case '1':
  *     case 'a':
@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
  *         System.out.println("どちらでもありません");
  *         break;
  * }
- *}<pre/>
+ * }<pre/>
  */
 public class Drink6 {
     public static void main(String[] args) {
@@ -43,8 +43,6 @@ public class Drink6 {
             }
         } catch (IOException e) {
             System.out.println(e);
-        } catch (NumberFormatException e) {
-            System.out.println("数字の形式が正しくありません。");
         }
     }
 }

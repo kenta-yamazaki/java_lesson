@@ -5,8 +5,8 @@ package sho6;
  */
 public class Count2 {
     public static void main(String[] args) {
-        for (int number = 1; number < 3; number++) {
-            System.out.println(number);
+        for (int i = 0; i < 3; i++) {
+            System.out.println(i);
         }
         System.out.println("end");
     }

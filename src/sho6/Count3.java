@@ -5,9 +5,9 @@ package sho6;
  */
 public class Count3 {
     public static void main(String[] args) {
-        for (int number = 0; number < 10; number++) {
-            System.out.print(number + "の2乗は" + (number * number) + "で、");
-            System.out.println("3乗は" + (number * number * number) + "です。");
+        for (int i = 0; i < 10; i++) {
+            System.out.print(i + "の2乗は" + Math.pow(i, 2) + "で、");
+            System.out.println("3乗は" + Math.pow(i, 3) + "です。");
         }
         System.out.println("end");
     }

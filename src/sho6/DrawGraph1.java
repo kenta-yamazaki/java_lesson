@@ -5,9 +5,9 @@ package sho6;
  */
 public class DrawGraph1 {
     public static void main(String[] args) {
-        for (int number1 = 0; number1 < 10; number1++) {
-            System.out.print(number1 + ":");
-            for (int number2 = 0; number2 < number1; number2++) {
+        for (int i = 0; i < 10; i++) {
+            System.out.print(i + ":");
+            for (int j = 0; j < i; j++) {
                 System.out.print("*");
             }
             System.out.println("");

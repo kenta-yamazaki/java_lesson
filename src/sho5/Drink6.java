@@ -33,10 +33,10 @@ public class Drink6 {
             System.out.println("3 どれでもありません(c)");
             System.out.println("1,2,3のどれかを選んでください（a,b,cでも選べます）。");
             String line = reader.readLine();
-            char moji = line.charAt(0);
-            if (moji == '1' || moji == 'a') {
+            char userSelectMoji = line.charAt(0);
+            if (userSelectMoji == '1' || userSelectMoji == 'a') {
                 System.out.println("オレンジジュースです");
-            } else if (moji == '2' || moji == 'b') {
+            } else if (userSelectMoji == '2' || userSelectMoji == 'b') {
                 System.out.println("コーヒーです");
             } else {
                 System.out.println("どちらでもありません");

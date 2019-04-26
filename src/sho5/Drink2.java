@@ -17,8 +17,8 @@ public class Drink2 {
             System.out.println("c どちらでもない");
             System.out.println("a,b,cのどれかを選んでください。");
             String line = reader.readLine();
-            char moji = line.charAt(0);
-            switch (moji) {
+            char userSelectMoji = line.charAt(0);
+            switch (userSelectMoji) {
                 case 'a':
                     System.out.println("オレンジジュースです");
                     break;

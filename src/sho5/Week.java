@@ -27,8 +27,8 @@ public class Week {
             System.out.println("5 金曜日");
             System.out.println("6 土曜日");
             String line = reader.readLine();
-            int number = Integer.parseInt(line);
-            switch (number) {
+            int userSelectNumber = Integer.parseInt(line);
+            switch (userSelectNumber) {
                 case 0:
                     System.out.println("日曜日です。");
                     break;

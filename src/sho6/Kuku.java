@@ -14,10 +14,10 @@ package sho6;
  */
 public class Kuku {
     public static void main(String[] args) {
-        for (int number1 = 1; number1 < 10; number1++) {
-            System.out.print(number1 + "*");
-            for (int number2 = 1; number2 < 10; number2++) {
-                System.out.print(number2 + "=" + number1 * number2 + ", ");
+        for (int i = 1; i < 10; i++) {
+            System.out.print(i + "*");
+            for (int j = 1; j < 10; j++) {
+                System.out.print(j + "=" + i * j + ", ");
             }
             System.out.println("");
         }

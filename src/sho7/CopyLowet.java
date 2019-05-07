@@ -1,0 +1,23 @@
+package sho7;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/**
+ * 大文字を小文字に変換するプログラム
+ */
+public class CopyLowet {
+    public static void main(String[] args) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String s = line.toLowerCase();
+                System.out.println(s);
+            }
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+    }
+}

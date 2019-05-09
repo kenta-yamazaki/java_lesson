@@ -28,8 +28,7 @@ public class Graph2 {
     }
 
     public static void printGraph(int x) {
-        int i;
-        for (i = 0; i < x; i++) {
+        for (int i = 0; i < x; i++) {
             System.out.print("*");
         }
         System.out.println();

@@ -31,8 +31,8 @@ import java.io.InputStreamReader;
  */
 public class MakeHtml {
     public static void main(String[] args) {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in,"UTF-8"));
             System.out.println("<!DOCTYPE html>");
             System.out.println("<html>");
             System.out.println("<head>");

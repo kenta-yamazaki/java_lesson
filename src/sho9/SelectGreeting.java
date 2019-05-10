@@ -14,7 +14,7 @@ public class SelectGreeting {
         if (0 <= number && number < message.length) {
             System.out.println(message[number]);
         } else {
-            System.out.println("番号は0〜" + (message.length - 1) + "び範囲で指定してください。");
+            System.out.println("番号は0〜" + (message.length - 1) + "選び範囲で指定してください。");
         }
     }
 }

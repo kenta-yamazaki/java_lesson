@@ -1,8 +1,10 @@
 package sho10;
 
 public class ProductItem {
-    String name;  //名前
-    int price;  //価格
+    /** 製品名 */
+    String name;
+    /** 製品価格 */
+    int price;
 
     public ProductItem(String name, int price) {
         this.name = name;

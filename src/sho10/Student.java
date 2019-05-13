@@ -4,8 +4,10 @@ package sho10;
  * 学生
  */
 public class Student {
-    String studentName; //氏名
-    int[] testScores;   //試験の点数
+    /** 氏名 */
+    String studentName;
+    /** 試験の点数 */
+    int[] testScores;
 
     public Student(String name, int score1, int score2, int score3) {
         this.testScores = new int[3];

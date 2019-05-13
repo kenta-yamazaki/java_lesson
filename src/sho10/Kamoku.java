@@ -21,12 +21,12 @@ public class Kamoku {
     }
 
     /**
-     * 科目の文字列表現
+     * 科目の文字列を出力
      *
-     * @return 戻り値
+     * @return 科目と科目点数を反映させた文字列
      */
     @Override
     public String toString() {
-        return this.kamokuName + "は" + kamokuScore + "点";
+        return this.kamokuName + "は" + this.kamokuScore + "点";
     }
 }

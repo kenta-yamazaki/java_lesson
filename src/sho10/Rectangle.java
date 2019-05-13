@@ -10,8 +10,10 @@ package sho10;
  * という文字列を得るためのtoStringメソッドを持つ
  */
 public class Rectangle {
-    int width;     //長方形の幅
-    int height;    //長方形の高さ
+    /** 長方形の幅 */
+    int width;
+    /** 長方形の高さ */
+    int height;
 
     public Rectangle(int width, int height) {
         this.width = width;

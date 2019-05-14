@@ -21,9 +21,9 @@ public class Kamoku {
     }
 
     /**
-     * 科目の文字列を表現する
+     * 科目名と点数を表現する文字列を返します
      *
-     * @return 科目の文字列を返す
+     * @return 科目名と点数を表現する文字列
      */
     @Override
     public String toString() {

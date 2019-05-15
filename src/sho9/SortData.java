@@ -3,7 +3,7 @@ package sho9;
 /**
  * ソートプログラムを完成させましょう
  */
-public class sortData {
+public class SortData {
     public static void main(String[] args) {
         int[] data = {31, 41, 59, 26, 53, 58, 97, 93, 23, 84};
         System.out.println("並び替える前");

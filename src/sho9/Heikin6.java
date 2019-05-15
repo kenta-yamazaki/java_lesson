@@ -6,9 +6,9 @@ package sho9;
 public class Heikin6 {
     public static void main(String[] args) {
         int[][] scores = {
-                {63, 90, 75, 45, 81},
-                {85, 100, 95, 80, 90},
-                {100, 100, 100, 100}
+                { 63,  90,  75,  45,  81 },
+                { 85, 100,  95,  80,  90 },
+                {100, 100, 100, 100, 100 },
         };
         for (int i = 0; i < scores.length; i++) {
             int sumScore = 0;

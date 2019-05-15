@@ -1,7 +1,7 @@
 package sho11;
 
 /**
- * list11-11
+ * 問題11-5
  * [player:Mad Htter]<br>
  * [player:March Hare]<br>
  * [player:Alice]<br>

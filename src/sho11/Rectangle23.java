@@ -19,14 +19,8 @@ public class Rectangle23 {
     }
 
     void setSize(int width, int height) {
-        if (width < 0) {
-            width = 0;
-        }
-        if (height < 0) {
-            height = 0;
-        }
-        this.width = width;
-        this.height = height;
+        this.width = width > 0 ? width : 0;
+        this.height = height > 0 ? height : 0;
     }
 
     int getArea() {

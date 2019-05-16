@@ -64,14 +64,14 @@ public class Rectangle24 {
     }
 
     Rectangle24 intersct(Rectangle24 rectangle) {
-        int sx = Math.max(this.x, rectangle.x);
-        int sy = Math.max(this.y, rectangle.y);
-        int ex = Math.min(this.x + this.width, rectangle.x + rectangle.width);
-        int ey = Math.min(this.y + this.height, rectangle.y + rectangle.height);
-        int newWidth = ex - sx;
-        int newHeight = ey - sy;
+        int startX = Math.max(this.x, rectangle.x);
+        int startY = Math.max(this.y, rectangle.y);
+        int endX = Math.min(this.x + this.width, rectangle.x + rectangle.width);
+        int endY = Math.min(this.y + this.height, rectangle.y + rectangle.height);
+        int newWidth = endX - startX;
+        int newHeight = endY - startY;
         if (newWidth > 0 && newHeight > 0) {
-            return new Rectangle24(sx, sy, newWidth, newHeight);
+            return new Rectangle24(startX, startY, newWidth, newHeight);
         } else {
             return null;
         }

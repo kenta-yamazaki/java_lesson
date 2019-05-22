@@ -3,13 +3,14 @@ package sho15;
 public class GcQuiz {
     public static ClassA q = new ClassA("ジャマイカ");
     public ClassA r = new ClassA("レベッカ");
+
     public static void main(String[] args) {
         ClassA a = new ClassA("ミトン");
         ClassA b = new ClassA("トム");
         ClassA c = new ClassA("モペット");
         ClassB[] arrayA = new ClassB[4];
         b = c;
-        for (int i = 0;i<4;i++){
+        for (int i = 0; i < 4; i++) {
             arrayA[i] = new ClassB("犬" + i);
         }
         arrayA[3].friend = arrayA[3];
@@ -18,15 +19,15 @@ public class GcQuiz {
         arrayA[1] = null;
         ClassA d = arrayA[0];
         ClassB arrayB[] = new ClassB[4];
-        arrayB[0] = new ClassB("フロプシー",new ClassA("野ネズミ"));
-        arrayB[0] = new ClassB("モプシー",new ClassA("ナトキン"));
-        arrayB[0] = new ClassB("カトンテール",new ClassA("c"));
-        arrayB[0] = new ClassB("ピーター",new ClassA("ベンジャミン"));
+        arrayB[0] = new ClassB("フロプシー", new ClassA("野ネズミ"));
+        arrayB[0] = new ClassB("モプシー", new ClassA("ナトキン"));
+        arrayB[0] = new ClassB("カトンテール", new ClassA("c"));
+        arrayB[0] = new ClassB("ピーター", new ClassA("ベンジャミン"));
         arrayA = null;
         arrayB[0].friend = null;
         arrayB[1] = null;
         arrayB[2] = null;
-        ClassB e = new ClassB("ルーシー",new ClassA("ティギー"));
+        ClassB e = new ClassB("ルーシー", new ClassA("ティギー"));
         e = null;
 
         System.gc();

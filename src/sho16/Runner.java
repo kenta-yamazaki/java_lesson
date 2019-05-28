@@ -4,10 +4,9 @@ package sho16;
  * list16-7 外からスレッドを終了させる
  */
 public class Runner extends Thread {
-    private boolean running = true;
-    int i = 0;
+    private static boolean running = true;
 
-    public void stopRunning() {
+    public static void stopRunning() {
         running = false;
     }
 
@@ -20,10 +19,10 @@ public class Runner extends Thread {
 
     public void doCommand() {
         System.out.println("OK");
-        stopRunning();
     }
 
     public static void main(String[] args) {
         new Runner().start();
+        new Runner2().start();
     }
 }

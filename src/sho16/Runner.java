@@ -4,9 +4,9 @@ package sho16;
  * list16-7 外からスレッドを終了させる
  */
 public class Runner extends Thread {
-    private static boolean running = true;
+    private boolean running = true;
 
-    public static void stopRunning() {
+    public void stopRunning() {
         running = false;
     }
 
@@ -22,7 +22,8 @@ public class Runner extends Thread {
     }
 
     public static void main(String[] args) {
-        new Runner().start();
-        new Runner2().start();
+        Runner runner1 = new Runner();
+        runner1.start();
+        runner1.stopRunning();
     }
 }

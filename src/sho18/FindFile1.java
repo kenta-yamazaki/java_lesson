@@ -1,6 +1,9 @@
 package sho18;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 /**
  * 問題18-2<br>
@@ -28,15 +31,13 @@ public class FindFile1 {
         }
         String findString = args[0];
         String fileName = args[1];
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName));) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String line;
-            int lineNumber = 1;
-            while ((line = reader.readLine()) != null) {
+            for (int lineNumber = 1; (line = reader.readLine()) != null; lineNumber++) {
                 int number = line.indexOf(findString);
                 if (number >= 0) {
                     System.out.println(lineNumber + "：" + line);
                 }
-                lineNumber++;
             }
         } catch (FileNotFoundException e) {
             System.out.println(fileName + "が見つかりません。");

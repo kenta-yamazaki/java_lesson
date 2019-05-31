@@ -28,7 +28,7 @@ import java.io.PrintWriter;
  * 997
  */
 public class Prime1 {
-    static final int MAX_PRIME = 1000;
+    private static final int MAX_PRIME = 1000;
 
     public static void main(String[] args) {
         if (args.length != 1) {
@@ -44,7 +44,7 @@ public class Prime1 {
         }
     }
 
-    public static void writerPrime(PrintWriter writer) {
+    private static void writerPrime(PrintWriter writer) {
         boolean[] prime = new boolean[MAX_PRIME];
         for (int i = 0; i < MAX_PRIME; i++) {
             prime[i] = true;
